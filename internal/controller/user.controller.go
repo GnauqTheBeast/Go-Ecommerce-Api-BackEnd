@@ -2,7 +2,7 @@ package controller
 
 import (
 	"github.com/GnauqTheBeast/go-ecommerce-backend-api/internal/service"
-	"github.com/GnauqTheBeast/go-ecommerce-backend-api/response"
+	"github.com/GnauqTheBeast/go-ecommerce-backend-api/pkg/response"
 	"github.com/gin-gonic/gin"
 )
 
@@ -17,5 +17,5 @@ func NewUserController() *UserController {
 }
 
 func (uc *UserController) GetUserById(c *gin.Context) {
-	response.SuccessResponse(c, 20001, []string{"dep trai", "tai nang"})
+	response.SuccessResponse(c, 20001, uc.userService.GetInfoUser())
 }

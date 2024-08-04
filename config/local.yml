@@ -1,14 +1,14 @@
 server:
   port: 8002
-databases:
-  - user: admin-1
-    password: admin
-    host: localhost
-    dbName: shop
-  - user: admin-2
-    password: admin
-    host: localhost
-    dbName: order
+postgres: 
+  host: 127.0.0.1
+  port: 5432
+  username: postgres
+  password: postgres
+  dbname: movietheater
+  maxIdleConns: 10
+  maxOpenConns: 100
+  connMaxLifetime: 3600
 security:
   jwt:
     key: abcxyz

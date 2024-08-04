@@ -1,2 +1,2 @@
-{"level":"INFO","time":"2024-07-22T23:18:28.520+0700","caller":"cli/main.log.go:17","msg":"Info log","line":1}
-{"level":"ERROR","time":"2024-07-22T23:18:28.520+0700","caller":"cli/main.log.go:18","msg":"Error log","line":2}
+{"level":"INFO","time":"2024-07-30T14:31:40.677+0700","caller":"cli/main.log.go:23","msg":"Info log","line":1}
+{"level":"ERROR","time":"2024-07-30T14:31:40.677+0700","caller":"cli/main.log.go:24","msg":"Error log","line":2}
