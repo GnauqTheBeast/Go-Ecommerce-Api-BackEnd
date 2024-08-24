@@ -5,10 +5,14 @@ postgres:
   port: 5432
   username: postgres
   password: postgres
-  dbname: movietheater
+  dbname: movie-theater
   maxIdleConns: 10
   maxOpenConns: 100
   connMaxLifetime: 3600
-security:
-  jwt:
-    key: abcxyz
+logger: 
+  log_level: debug
+  file_log_name: "./storages/logs/dev.001.log"
+  max_size:    500 
+  max_backups: 3
+  max_age:     28  
+  compress:   true
